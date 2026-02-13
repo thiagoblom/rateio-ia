@@ -4,14 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0 --port 5173",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
     "g": "^2.0.1",
     "npm": "^11.9.0",
+    "primeflex": "^4.0.0",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.9.7",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -24,6 +28,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "json-server": "^1.0.0-beta.5",
     "vite": "^7.3.1"
   }
 }
