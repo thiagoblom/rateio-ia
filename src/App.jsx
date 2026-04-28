@@ -70,7 +70,15 @@ const PERSON_GROUP_TYPES = [
 const createDefaultGroupCounts = () =>
   PERSON_GROUP_TYPES.reduce((acc, item) => ({ ...acc, [item.key]: 1 }), {})
 
-const getGroupPersonCount = (counts = {}) => {
+const getGroupPersonCount = (counts = {}, expenseType) => {
+  const typeKey = (expenseType || '').toLowerCase()
+  const matchingType = PERSON_GROUP_TYPES.find((type) => type.key === typeKey)
+  if (matchingType) {
+    const specific = toSafeInteger(counts[matchingType.key])
+    if (specific > 0) {
+      return specific
+    }
+  }
   const values = PERSON_GROUP_TYPES.map((type) => toSafeInteger(counts[type.key]))
   if (!values.length) return 1
   return Math.max(1, ...values)
@@ -281,6 +289,9 @@ function App() {
   const [expenseForm, setExpenseForm] = useState(EMPTY_EXPENSE)
   const [expenseError, setExpenseError] = useState('')
   const [appError, setAppError] = useState('')
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('rateio-theme') || 'dark'
+  })
   const [editingExpense, setEditingExpense] = useState(null)
   const [loading, setLoading] = useState(false)
   const [activeModule, setActiveModule] = useState('period')
@@ -370,6 +381,15 @@ function App() {
     localStorage.setItem('rateio-user', JSON.stringify(user))
   }
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('rateio-theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+  }
+
   const fetchData = useCallback(async () => {
     if (!currentUser) return
     setLoading(true)
@@ -455,7 +475,7 @@ function App() {
       if (!selectedKeys.size) return
       const expenseUnits = Array.from(selectedKeys).map((key) => ({
         key,
-        units: getGroupPersonCount(personMap[key]?.counts),
+        units: getGroupPersonCount(personMap[key]?.counts, expense.type),
       }))
       const totalUnits = expenseUnits.reduce((sum, item) => sum + item.units, 0)
       if (!totalUnits) return
@@ -995,21 +1015,29 @@ function App() {
         <div className="topbar-brand">
           <span className="pill">Rateio IA</span>
         </div>
-        <div className="topbar-actions compact">
-          <div
-            className="user-avatar"
-            title={currentUser.name || currentUser.username}
-            aria-label="Perfil do usuário"
-          >
-            {userInitials || '??'}
-          </div>
-          <span className="user-role">{ROLE_LABELS[currentUser.role] || currentUser.role}</span>
-          <button
-            className="ghost icon-button"
-            type="button"
-            onClick={handleLogout}
-            aria-label="Sair"
-          >
+          <div className="topbar-actions compact">
+            <div
+              className="user-avatar"
+              title={currentUser.name || currentUser.username}
+              aria-label="Perfil do usuário"
+            >
+              {userInitials || '??'}
+            </div>
+            <span className="user-role">{ROLE_LABELS[currentUser.role] || currentUser.role}</span>
+            <button
+              className="ghost icon-button"
+              type="button"
+              onClick={toggleTheme}
+              aria-label="Alternar tema"
+            >
+              <span className={`pi ${theme === 'dark' ? 'pi-sun' : 'pi-moon'}`} aria-hidden="true" />
+            </button>
+            <button
+              className="ghost icon-button"
+              type="button"
+              onClick={handleLogout}
+              aria-label="Sair"
+            >
             <span className="pi pi-power-off" aria-hidden="true" />
           </button>
         </div>

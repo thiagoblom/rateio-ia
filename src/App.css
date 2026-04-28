@@ -3,6 +3,38 @@
   min-height: 100vh;
 }
 
+.theme-preview {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+:root {
+  --page-bg: #020617;
+  --surface: #0f172a;
+  --card-bg: rgba(15, 23, 42, 0.8);
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: rgba(148, 163, 184, 0.4);
+  --topbar-bg: rgba(2, 6, 23, 0.8);
+}
+
+:root[data-theme='light'] {
+  --page-bg: #f8fafc;
+  --surface: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --border: rgba(15, 23, 42, 0.15);
+  --topbar-bg: rgba(248, 250, 252, 0.95);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
 .page {
   width: min(1200px, 100%);
   margin: 0;
@@ -19,6 +51,8 @@
   justify-content: space-between;
   gap: 8px;
   padding: 8px 24px;
+  background: var(--topbar-bg);
+  border-radius: 28px;
 }
 
 .topbar.compact {
@@ -166,6 +200,8 @@
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   min-height: 220px;
+  background: var(--card-bg);
+  border: 1px solid transparent;
 }
 
 .period-card.active {
@@ -208,18 +244,18 @@
   text-align: center;
   border-radius: 16px;
   padding: 10px;
-  background: rgba(15, 23, 42, 0.04);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .period-card-stat span {
   display: block;
   font-size: 12px;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 .period-card-stat strong {
   font-size: 18px;
-  color: #0f172a;
+  color: var(--text-primary);
 }
 
 .period-card-actions {
@@ -522,7 +558,7 @@
 
 .period-filter-label {
   font-size: 14px;
-  color: #0f172a;
+  color: var(--text-muted);
   font-weight: 600;
 }
 
@@ -537,7 +573,7 @@
 .card,
 .table-card,
 .auth-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--card-bg);
   border-radius: 24px;
   padding: 24px;
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
@@ -562,21 +598,21 @@
 }
 
 .muted {
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 14px;
 }
 
 .error-banner {
   padding: 8px 12px;
   border-radius: 12px;
-  background: #fee2e2;
-  color: #991b1b;
+  background: rgba(248, 113, 113, 0.2);
+  color: #b91c1c;
 }
 
 .loading {
   padding: 10px 16px;
   border-radius: 12px;
-  background: rgba(15, 23, 42, 0.08);
+  background: rgba(15, 23, 42, 0.2);
 }
 
 .form {
@@ -590,17 +626,18 @@
   flex-direction: column;
   gap: 6px;
   font-size: 14px;
-  color: #1e293b;
+  color: var(--text-primary);
 }
 
 .form input,
 .form select {
   border-radius: 12px;
-  border: 1px solid rgba(15, 23, 42, 0.12);
+  border: 1px solid var(--border);
   padding: 10px 12px;
   font-size: 14px;
   font-family: inherit;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--surface);
+  color: var(--text-primary);
 }
 
 .form input:focus,
@@ -709,8 +746,9 @@
 }
 
 .ghost {
-  background: rgba(15, 23, 42, 0.08);
-  color: #0f172a;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
 }
 
 .ghost.small {

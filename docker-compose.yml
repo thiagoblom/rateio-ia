@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  json-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.json-server
+    volumes:
+      - ./db.json:/app/db.json:ro
+    ports:
+      - '3000:3000'
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - json-server
+    ports:
+      - '80:80'
+    environment:
+      VITE_API_URL: http://json-server:3000

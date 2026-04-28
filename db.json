@@ -317,12 +317,79 @@
         {
           "name": "Julio",
           "counts": {
+            "comida": 3,
+            "bebida": 1
+          }
+        },
+        {
+          "name": "Gabriel",
+          "counts": {
+            "comida": 2,
+            "bebida": 0
+          }
+        }
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "aa0e",
+      "name": "Páscoa",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-05",
+      "people": [
+        {
+          "name": "Thiago",
+          "counts": {
+            "comida": 2,
+            "bebida": 1
+          }
+        },
+        {
+          "name": "Cristiano",
+          "counts": {
             "comida": 2,
             "bebida": 1
           }
         },
         {
           "name": "Gabriel",
+          "counts": {
+            "comida": 2,
+            "bebida": 0
+          }
+        },
+        {
+          "name": "Gustavo",
+          "counts": {
+            "comida": 2,
+            "bebida": 1
+          }
+        },
+        {
+          "name": "Sid",
+          "counts": {
+            "comida": 2,
+            "bebida": 1
+          }
+        }
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "9a7f",
+      "name": "Teste",
+      "startDate": "2026-04-28",
+      "endDate": "2026-05-04",
+      "people": [
+        {
+          "name": "Thiago",
+          "counts": {
+            "comida": 2,
+            "bebida": 1
+          }
+        },
+        {
+          "name": "Andre",
           "counts": {
             "comida": 2,
             "bebida": 0
@@ -1691,8 +1758,8 @@
       "participants": [
         "Thiago",
         "Sid",
-        "Julio",
-        "Cristiano"
+        "Cristiano",
+        "Julio"
       ]
     },
     {
@@ -1709,6 +1776,524 @@
         "Thiago",
         "Wilmar",
         "Julio"
+      ]
+    },
+    {
+      "id": "6aaa",
+      "date": "15/02/2026",
+      "category": "Mercado",
+      "description": "ASUN CIDREIRA",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 118.84,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "c007",
+      "date": "13/02/2026",
+      "category": "Mercado",
+      "description": "NUNES SUPERMERCADO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 297.26,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "c3e3",
+      "date": "14/02/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 154.93,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "623e",
+      "date": "14/02/2026",
+      "category": "Mercado",
+      "description": "ASUN CIDREIRA",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 326.07,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "7c96",
+      "date": "15/02/2026",
+      "category": "Mercado",
+      "description": "NUNES SUPERMERCADO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 461.81,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "b237",
+      "date": "15/02/2026",
+      "category": "Ferragem",
+      "description": "CIA DA AGUA E DO GAS",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 58,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "8e4b",
+      "date": "15/02/2026",
+      "category": "Mercado",
+      "description": "A DA FONSECA JORGE E P",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 107.5,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "1596",
+      "date": "13/02/2026",
+      "category": "Ferragem",
+      "description": "CIA DA AGUA E DO GAS",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 58,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "0ff8",
+      "date": "16/02/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 81.87,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "38c2",
+      "date": "16/02/2026",
+      "category": "Mercado",
+      "description": "SACOLAO PEGUE E PESE",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 99.32,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "2c94",
+      "date": "16/02/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 78.62,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "bab0",
+      "date": "17/02/2026",
+      "category": "Mercado",
+      "description": "NUNES SUPERMERCADO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 174.93,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "36d9",
+      "date": "14/02/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 93.84,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Julio",
+        "Thiago",
+        "Sid",
+        "Cristiano",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "f7dd",
+      "date": "17/02/2026",
+      "category": "Mercado",
+      "description": "ART*ESUPE RMERCADO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 13.22,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Thiago",
+        "Sid",
+        "Gabriel"
+      ]
+    },
+    {
+      "id": "1f49",
+      "date": "18/02/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 66.07,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Thiago",
+        "Sid"
+      ]
+    },
+    {
+      "id": "66e9",
+      "date": "19/02/2026",
+      "category": "Mercado",
+      "description": "NUNES SUPERMERCADO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 86.39,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Thiago",
+        "Sid"
+      ]
+    },
+    {
+      "id": "04a8",
+      "date": "19/02/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "0",
+      "payer": "C6",
+      "amount": 113.16,
+      "type": "Comida",
+      "periodId": "4ae1",
+      "participants": [
+        "Thiago",
+        "Sid"
+      ]
+    },
+    {
+      "id": "10c9",
+      "date": "07/03/2026",
+      "category": "Mercado",
+      "description": "NUNES SUPERMERCADO",
+      "notes": "",
+      "payer": "C6",
+      "amount": 382.96,
+      "type": "Comida",
+      "periodId": null,
+      "participants": []
+    },
+    {
+      "id": "cf01",
+      "date": "03/04/2026",
+      "category": "Serviços",
+      "description": "JORGEEDUARDO",
+      "notes": "",
+      "payer": "C6",
+      "amount": 265.79,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "3504",
+      "date": "02/04/2026",
+      "category": "Mercado",
+      "description": "ASUN CIDREIRA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 231.98,
+      "type": "bebida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Sid"
+      ]
+    },
+    {
+      "id": "442d",
+      "date": "03/04/2026",
+      "category": "Ferragem",
+      "description": "ALEMAO GAS",
+      "notes": "",
+      "payer": "C6",
+      "amount": 55,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "8c46",
+      "date": "03/04/2026",
+      "category": "Mercado",
+      "description": "BOM MERCADO COMERCIO",
+      "notes": "",
+      "payer": "C6",
+      "amount": 36.66,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "fec6",
+      "date": "03/04/2026",
+      "category": "Mercado",
+      "description": "ASUN CIDREIRA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 136.18,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "2a09",
+      "date": "03/04/2026",
+      "category": "Restaurante / Lanchonete / Bar",
+      "description": "49623688PRISCILA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 22,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "987e",
+      "date": "04/04/2026",
+      "category": "Mercado",
+      "description": "ASUN CIDREIRA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 246.82,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "d047",
+      "date": "04/04/2026",
+      "category": "Mercado",
+      "description": "NUNES SUPERMERCADO",
+      "notes": "",
+      "payer": "C6",
+      "amount": 161.38,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "ec18",
+      "date": "04/04/2026",
+      "category": "Ferragem",
+      "description": "LUISRAFAELFANFA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 40,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "c424",
+      "date": "04/04/2026",
+      "category": "Mercado",
+      "description": "ASUN CIDREIRA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 168.94,
+      "type": "bebida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gustavo",
+        "Sid"
+      ]
+    },
+    {
+      "id": "5b49",
+      "date": "02/04/2026",
+      "category": "Restaurante / Lanchonete / Bar",
+      "description": "MASTER PIZZARIA",
+      "notes": "",
+      "payer": "C6",
+      "amount": 289.7,
+      "type": "Comida",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gabriel",
+        "Sid"
+      ]
+    },
+    {
+      "id": "d025",
+      "date": "2026-04-03",
+      "category": "Diversos",
+      "description": "Asun",
+      "notes": "cerveja",
+      "amount": 353.4,
+      "type": "bebida",
+      "payer": "C6",
+      "periodId": "aa0e",
+      "participants": [
+        "Thiago",
+        "Cristiano",
+        "Gustavo",
+        "Sid"
       ]
     }
   ]
